@@ -33,3 +33,10 @@ A Video chat app built using NodeJs, WebRTC and Firebase. The user experience is
 
 ## Tic-tac-toe
 <img src='/screenshots/ss7.jpeg'/>
+
+# Contributors
+Ahel Das Chatterjee
+Anirban Sikder
+Anish De
+Sounak Majumder
+Devtanu Misra
