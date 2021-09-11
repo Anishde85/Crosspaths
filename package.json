@@ -22,7 +22,8 @@
     "runner-js": "^0.0.3",
     "socket.io": "^2.3.0",
     "sweetalert": "^2.1.2",
-    "uuid": "^8.1.0"
+    "uuid": "^8.1.0",
+    "vanilla-require": "^1.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
