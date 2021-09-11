@@ -12,31 +12,24 @@ A Video chat app built using NodeJs, WebRTC and Firebase. The user experience is
 - Share screen with other participants
 - Invite others directly from site by meeting ids
 
-# Snapshots of the site:
-## Join/Create a meeting:
-<img src='/screenshots/ss1.png'/>
+# Snapshots of the site: 
+## Home Page:
+<img src='/screenshots/ss1.jpeg'/>
 
-## Enter name and video/audio preferences:
-<img src='/screenshots/ss2.png'/>
+## Enter name and video/audio preferences and create/join a meeting:
+<img src='/screenshots/ss2.jpeg'/>
 
-## The main page: 
-<img src='/screenshots/ss3.png'/>
-
-## Chat with other users:
-<img src='/screenshots/ss4.png'/>
-
-<img src='/screenshots/ss5.png'/>
-<img src='/screenshots/ss6.png'/>
+## The meeting page: 
+<img src='/screenshots/ss3.jpeg'/>
 
 ## Whiteboard
-<img src='/screenshots/ss7.png'/>
+<img src='/screenshots/ss4.jpeg'/>
 
-## Redirect to 404 not found page if user puts in wrong meeting id:
-<img src='/screenshots/ss8.png'/>
+## Translator
+<img src='/screenshots/ss5.jpeg'/>
 
-## Screen Share
-<img src='/screenshots/ss9.png'/>
-<img src='/screenshots/ss10.png'/>
+## Mix-or-match
+<img src='/screenshots/ss6.jpeg'/>
 
-## Invite users:
-<img src='/screenshots/ss11.png'/>
+## Tic-tac-toe
+<img src='/screenshots/ss6.jpeg'/>
