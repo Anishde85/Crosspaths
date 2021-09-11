@@ -32,4 +32,4 @@ A Video chat app built using NodeJs, WebRTC and Firebase. The user experience is
 <img src='/screenshots/ss6.jpeg'/>
 
 ## Tic-tac-toe
-<img src='/screenshots/ss6.jpeg'/>
+<img src='/screenshots/ss7.jpeg'/>
