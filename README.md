@@ -14,25 +14,28 @@ A Video chat app built using NodeJs, WebRTC and Firebase. The user experience is
 
 # Snapshots of the site: 
 ## Home Page:
-<img src='/screenshots/ss1.jpeg'/>
+<img src='./screenshots/ss1.jpeg'/>
 
 ## Enter name and video/audio preferences and create/join a meeting:
-<img src='/screenshots/ss2.jpeg'/>
+<img src='./screenshots/ss2.jpeg'/>
 
 ## The meeting page: 
-<img src='/screenshots/ss3.jpeg'/>
+<img src='./screenshots/ss3.jpeg'/>
 
 ## Whiteboard
-<img src='/screenshots/ss4.jpeg'/>
+<img src='./screenshots/ss4.jpeg'/>
 
 ## Translator
-<img src='/screenshots/ss5.jpeg'/>
+<img src='./screenshots/ss5.jpeg'/>
 
 ## Mix-or-match
-<img src='/screenshots/ss6.jpeg'/>
+<img src='./screenshots/ss6.jpeg'/>
 
 ## Tic-tac-toe
-<img src='/screenshots/ss7.jpeg'/>
+<img src='./screenshots/ss7.jpeg'/>
+
+## Glassmorphism
+<img src="./screenshots/glassmorphism.gif">
 
 # Contributors
 Ahel Das Chatterjee
