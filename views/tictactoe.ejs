@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+
+		<link rel="icon" href="/assets/crosspaths-icon.png" type="image/x-icon"/>
+
+	<!-- CSS file Included -->
+	<link rel="stylesheet"
+		type="text/css" href="/css/tictactoe.css">
+
+	<!-- JavaScript file included -->
+	<script src="/tictactoe.js" defer></script>
+</head>
+
+<body>
+	<div id="main">
+		<div class="topleft">
+			<img src="/assets/tictactoe.png" alt="Cinque Terre" width="100" height="100">
+		</div>
+		<div id="button-wrapper" class="button-wrapper">
+			<div id="button-containers" class="">
+			  <h1>TIC TAC TOE</h1>
+			</div>
+		</div>
+
+		<!-- Game Instructions -->
+		<p id="ins">Game starts by just Tap on box<br><br>First Player (You) starts as<b>Player X</b><br>And<br>Second Player (Computer) as <b>Player 0</b>
+		</p>
+
+
+		<br><br>
+		<!-- 3*3 grid of Boxes -->
+		<input type="text" id="b1" onclick="myfuncfill(1); myfunc();" readonly>
+
+		<input type="text" id="b2" onclick="myfuncfill(2); myfunc();" readonly>
+
+		<input type="text" id="b3" onclick="myfuncfill(3); myfunc();" readonly>
+		<br><br>
+
+		<input type="text" id="b4" onclick="myfuncfill(4); myfunc();" readonly>
+			
+		<input type="text" id="b5" onclick="myfuncfill(5); myfunc();" readonly>
+
+		<input type="text" id="b6" onclick="myfuncfill(6); myfunc();" readonly>
+		<br><br>
+
+		<input type="text" id="b7" onclick="myfuncfill(7); myfunc();" readonly>
+
+		<input type="text" id="b8" onclick="myfuncfill(8);myfunc();" readonly>
+
+		<input type="text" id="b9" onclick="myfuncfill(9);myfunc();" readonly>
+
+		<!-- Grid end here -->
+		<br><br><br>
+		<!-- Button to reset game -->
+		<button id="but" onclick="myfunc_2()">
+			RESET
+		</button>
+
+		<br><br>
+		<!-- Space to show player turn -->
+		<p id="print"></p>
+
+
+	</div>
+	<script type="text/javascript" src="glass.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll("#but"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+            });
+        </script>
+		<script>
+            VanillaTilt.init(document.querySelectorAll("#button-wrapper"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+            });
+        </script>
+</body>
+
+</html>

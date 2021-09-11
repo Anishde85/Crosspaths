@@ -1,0 +1,114 @@
+body, #homepg-wrapper {
+    background: rgb(78, 55, 121);
+    font-family: 'Calibri';
+}
+	h1 {
+		color: rgb(255, 255, 255);
+		font-size: 45px;
+	}
+
+	/* 3*3 Grid */
+	#b1, #b2, #b3, #b4, #b5,
+	#b6, #b7, #b8, #b9 {
+		width: 80px;
+		height: 52px;
+		margin: auto;
+		border: 1px solid gray;
+		border-radius: 6px;
+		font-size: 30px;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	/* Reset Button */
+	#but {
+		box-sizing: border-box;
+		width: 130px;
+		height: 40px;
+		border: 1px solid dodgerblue;
+		margin: auto;
+		border-radius: 4px;
+		box-shadow: 20px 20px 50 px rgba(0,0,0,0.5);
+    	border-radius: 15px;
+		font-family: 'Calibri';
+		background-color: rgb(1, 4, 190);
+		color: white;
+		font-size: 20px;
+		cursor: pointer;
+		overflow: hidden;
+		backdrop-filter: blur(5px);
+		transition: translateY(100px);
+    	opacity: 0.9;
+    	transition: 0.5s;
+	}
+
+	#but:hover{
+		transition: translateY(0px);
+		opacity: 1;
+	}
+
+	/* Player turn space */
+	#print {
+		font-family: 'Calibri';
+
+		color: rgb(255, 255, 255);
+		font-size: 20px;
+	}
+
+	/* Main Container */
+	#main {
+		text-align: center;
+	}
+
+	/* Game Instruction Text */
+	#ins {
+		font-family: 'Calibri';
+			
+		color: rgb(255, 255, 255);
+		font-size: 17px;
+	}
+	#button-wrapper {
+		position: relative;
+		width: 50%;
+		height: 100px;
+		margin-left: 25% !important;
+		margin:30px;
+		box-shadow: 20px 20px 50 px rgba(0,0,0,0.5);
+		border-radius: 15px;
+		background: rgba(255, 255, 255, 0.1);
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-top: 1px solid rgba(255, 255, 255, 0.5);
+		border-left: 1px solid rgba(255, 255, 255, 0.5);
+		backdrop-filter: blur(5px);
+	}
+	#button-wrapper:hover #button-containers {
+		transition: translateY(0px);
+		opacity: 1;
+	}
+	a {
+		display: inline-block;
+		padding: 8px 20px;
+		text-decoration: none;
+		font-size: 1.8em;
+		color: rgba(255,255,255,1);
+		/*
+		pointer-events: none;
+		
+		background: #fff;
+		color: #000;
+		border-radius: 20px;
+		font-weight: 500;
+		box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+		*/
+	}
+
+	.topleft {
+		position: absolute;
+		margin: 30px;
+		top: 8px;
+		left: 16px;
+		font-size: 18px;
+	  }

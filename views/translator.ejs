@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/assets/crosspaths-icon.png" type="image/x-icon"/>
+
+    <!-- Bootstrap CSS -->
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="/translator.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="/css/translate.css">
+	<title>Translator</title>
+</head>
+
+<body>
+  <div class="topleft">
+    <img src="assets/translator.jpeg" alt="Cinque Terre" width="100" height="100">
+  </div>
+	<div id="button-wrapper2" class="button-wrapper2">
+    <div id="button-containers" class="">
+        <h1>Don't know the meaning of any word<br>
+          no worries, translate it</h1>
+    </div>
+  </div>
+	<div id="button-wrapper" class="button-wrapper">
+    <div id="button-containers" class="">
+        <label>Enter your text in English:</label>
+        <input type="text" id="text"><br><br>
+    </div>
+  </div>
+  <br>
+	<div id="button-wrapper" class="button-wrapper">
+    <div id="button-containers" class="">
+      <label>Enter the Language:</label>
+      <input type="text" id="lang"><br><br>
+      
+    </div>
+  </div>
+  <!-- <input type="submit" value="Submit" onclick="tran();"> -->
+  <br>
+  <button id="but" onclick="tran()">
+  SUBMIT
+  </button>
+  <br>
+  <br>
+</div>
+  <div id="button-wrapper" class="button-wrapper">
+    <div id="button-containers" class="">
+      <label>Translated Text:</label>
+      <input type="text" id="output"><br><br>
+    </div>
+  </div>
+    <script type="text/javascript" src="glass.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll("#button-wrapper"), {
+          max: 25,
+          speed: 400,
+          glare: true,
+          "max-glare": 1,
+      });
+    </script>
+</body>
+
+</html>

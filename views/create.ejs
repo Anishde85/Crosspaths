@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="/assets/crosspaths-icon.png" type="image/x-icon"/>
+  <link rel = "stylesheet" type="text/css" href="/css/create.css"/>
+  <script src="create.js" defer></script>
+  <title>CREATE MEETING</title>
+  
+</head>
+<body>
+    <form id="form">
+        <div id="set-name">
+          <br></br>
+          <img src="/assets/rocket.png" height="50" width="50"/>
+
+          <input type="text" id="name" placeholder="Type your name here..."></input>
+
+          <label>Video Options:</label>
+          <div class="videoOnOff">
+            <input type='radio' name='video' value='On'>
+              Video On
+            </input>
+            
+            <input type='radio' name='video' value='Off'>
+              Video Off
+            </input>
+          </div>
+
+          <label>Audio Options:</label>
+          <div class="audioOnOff">
+            <input type='radio' name='audio' value='On'>
+              Audio On
+            </input>
+            
+            <input type='radio' name='audio' value='Off'>
+              Audio Off
+            </input>
+          </div>
+
+          <button type="button" id="submit">CREATE</button>
+        </div>
+    </form>
+
+    <div class="animation-container">
+      <div id="building">
+        <img src="/assets/houseimage.png" alt="" width="200" height="200"/>
+      </div>
+
+      <div id="cyclist">
+        <img src="/assets/cyclist.png" alt="" width="100" height="100"/>
+      </div>
+
+      <div id="office">
+        <img src="/assets/houseimage.png" alt="" width="200" height="200"/>
+      </div>
+    </div>
+</body>
+</html>

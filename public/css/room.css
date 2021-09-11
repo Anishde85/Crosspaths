@@ -1,0 +1,419 @@
+*{
+    background-color: rgb(78,55,121)
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .games-button {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999d);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999d);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999d);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999d);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999d);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 40px auto 60px;
+  position: fixed;
+  top: 0px;
+  right: 10px;
+}
+
+.games-button:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+
+
+  .games {
+    position: fixed;
+    top: 10px;
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999d);
+    left: 30%;
+    width: 40%;
+    margin: 0px auto;
+    visibility: hidden;
+    border-radius: 10px;
+    z-index: 200;
+    padding: 10px;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  .games-container-wrapper {
+    display: flex;
+    background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999d);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999d);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999d);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999d);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999d);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .games-container {
+    margin: 10px;
+    background: #30e3cb;
+    
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .headlines {
+    display: flex;
+    background: #11cdd4;
+  }
+
+  .games-heading {
+    text-align: center;
+    background: #11cdd4;
+    border-radius: 10px;
+    width: 80%;
+  }
+
+  .close {
+    text-align: center;
+    background: #11cdd4;
+    border-radius: 10px;
+    width: 20%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .games-container:hover {
+    background-color: antiquewhite;
+  }
+
+  .games-heading-inner {
+    text-align: center;
+    background-color: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .share-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #mailid{
+    width: 300px;
+    height: 30px;
+    background-color: aliceblue;
+  }
+
+  #share-button{
+    height: 35px;
+    width: 35px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  #videopluschat{
+    width:100%;
+    height:80%;
+    display: flex;
+  }
+
+  
+  
+  #video-grid {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-y: auto;
+  }
+  
+  video {
+    display: block;
+    flex: 1;
+    width: 100px;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    max-width: 600px;
+    border: 1px solid gold;
+  }
+
+  #chat-grid{
+    width:30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  #chat-contents{
+    height:400px;
+    background-color: rgb(78,55,121);
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  #form{
+    width: 100%;
+  }
+
+  
+
+  input{
+    caret-color: aliceblue;
+    cursor: url('/assets/icons8-cursor.svg');
+  }
+
+  #send-message{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(78,55,121);
+    border-radius: 30px;
+  }
+
+  #message-input{
+    width: 90%;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  #send-button{
+    width: 10%;
+    background-color: black;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .control-panel-wrapper{
+    position: absolute;
+    bottom: 0px;
+    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    left: 0px;
+    right: 0px;
+
+    
+    
+    
+
+    
+  }
+
+  .control-panel{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    
+    align-items: center;
+    width: 400px;
+    border-radius: 30px;
+    text-align: center;
+    transition: translateY(100px);
+    opacity: 0.5;
+    transition: 0.5s;
+    padding: 20px;
+    color: aliceblue;
+    box-shadow: 20px 20px 50 px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+
+  }
+
+  .control-elements{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 30px;
+    background-color: aliceblue;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    text-align: center;
+    margin-top: 2px;
+  }
+
+  .control-elements:hover{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid green;
+    margin: 1px;
+    cursor: pointer;
+  }
+
+  .board:hover{
+    transform: scaleX(1.2);
+    transform: scaleY(1.2);
+  }
+  .tictactoe:hover{
+    transform: scaleY(1.1);
+  }
+
+  .popup {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 100%;
+    padding-top: 10px;
+  }
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+visibility: hidden;
+width: 200px;
+background-color: #fff;
+color: rgb(143, 63, 63);
+text-align: center;
+border-radius: 6px;
+padding: 8px 0;
+position: absolute;
+z-index: 1;
+bottom: 125%;
+left: 50%;
+margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+visibility: visible;
+-webkit-animation: fadeIn 1s;
+animation: fadeIn 1s
+}
+
+.popup-buttons {
+border: none;
+background-color: #fff;
+color:mediumblue;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.popup-items {
+background-color: white;
+margin-left: 5px;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+from {opacity: 0;}
+to {opacity:1 ;}
+}
+#code {
+  position: relative;
+  width: 20%;
+  height: 50px;
+  margin:10px;
+  box-shadow: 20px 20px 50 px rgba(0,0,0,0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+#code:hover #button-containers {
+  transition: translateY(0px);
+  opacity: 1;
+}
+a {
+  display: inline-block;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-size: 1.8em;
+  color: rgba(255,255,255,1);
+  /*
+  pointer-events: none;
+  
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  */
+}

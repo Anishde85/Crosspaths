@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="/assets/crosspaths-icon.png" type="image/x-icon"/>
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script defer src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js'></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script defer>
+    const ROOM_ID = "<%= roomId %>"
+  </script>
+  <script defer src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+  <script defer src="/socket.io/socket.io.js" defer></script>
+  <script defer src="script.js" defer></script>
+  <title>Teams</title>
+  <link rel = "stylesheet" href="/css/room.css">
+</head>
+<body>
+  <div class="share-wrapper">
+    <form class="share-form">
+      <p style="padding-right: 5px; font-size: large ;color: azure;">Meeting Id:-</p>
+      <input id="code" style="padding-right: 5px; color: aliceblue;" value="<%= roomId %>">
+    </input>
+      <button type="button" id="share-button">
+      <img src="/assets/copy.png" alt="" height="30" width="30" style="background-color: aliceblue;"/>
+        
+      </button>
+    </form>
+  </div>
+
+  <button class = "games-button" >Play Games</button>
+
+  <div class ="games">
+    <div class = "headlines">
+      <h2 class = "games-heading">Play Games</h2>
+      <button class = "close" id = "close-button"><img src="/assets/close-window.jpg" alt="" height="30" width="30" style="background-color: #11cdd4;"/>
+      </button>
+    </div>
+
+    <div class = "games-container-wrapper">
+      <div class = "games-container">
+        <h3 class = "games-heading-inner">Play Tic Tac Toe</h3>
+        <a href = "/tictactoe" target='_blank'><img src = "/assets/tictactoe.png" alt = "" height = "150" width = "100"></a>
+      </div>
+
+      <div class = "games-container">
+        <h3 class = "games-heading-inner">Play Mix-or-Match</h3>
+        <a href = "https://anirbansikder.github.io/Card-Game/" target='_blank'><img src = "/assets/Mix-Or-Match.png" alt = "" height = "150" width = "100"></a>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="videopluschat">
+  
+  <div id="video-grid"></div>
+  
+  <div id="chat-grid">
+    <div id="chat-container">
+      <h5 style="color: #A9A9A9; text-align: center;">INBOX</h5>
+
+      <div id="chat-contents">
+        <div style="background-color: rgb(78,55,121); display:flex; justify-content: center; align-items: center;">
+          <img src="/assets/rocket.png" alt="" width="50" height="50">
+        </div>
+        <h5 style="color: #A9A9A9; text-align: center;">Your messages will be diplayed here...</h5>
+        <div style="background-color: #A9A9A9; height: 1px; width: 100%"></div>
+      </div>
+    </div>
+    <form id="form">
+      <div id="send-message">
+        <input type="text" id="message-input" placeholder="Type your message here..." style="color: black;"></input>
+        <button type="button" id="send-button">
+          <i class="fa fa-paper-plane-o" style="background-color: black; color: aliceblue"></i>
+        </button>
+    </div>
+    </form>
+  </div>
+
+  <div class="control-panel-wrapper">
+    <div class="control-panel">
+      
+      <div class="control-elements" id="element-2">
+        <i class="fa fa-video-camera" style="color: red; background-color: aliceblue;"></i>
+        
+      </div>
+      <div class="control-elements" id="element-3">
+        <i class="fa fa-phone" style="color: red; background-color: aliceblue;"></i>
+        
+      </div>
+      <div class="control-elements" id="element-4">
+        <i class="fa fa-microphone" style="color: red; background-color: aliceblue;"></i>
+        
+      </div>
+      
+
+      <div class="control-elements" id="element-7">
+        <i class="fa fa-comment" style="color: red; background-color: aliceblue;"></i>
+        
+      </div>
+    
+      <div class="popup" onclick="myFunction()">
+        <i class="fa fa-ellipsis-v" style="color: red; background-color: aliceblue;"></i>
+        <span class="popuptext" id="myPopup">Choose...
+        <a href = "/tictactoe" target='_blank'><button class = "popup-buttons"><img src = "assets/tictactoe.png" height = '40' width = '40'><h3 class ="popup-items" id="tictactoe">Play Tic - Tac - Toe</h3></button></a>
+        <a href = "https://anirbansikder.github.io/Card-Game/" target='_blank'><button class = "popup-buttons"><img src = "assets/Mix-Or-Match.png" height = '40' width = '40'><h3 class ="popup-items" id="MixOrMatch">Play Mix Or Match</h3></button></a>
+        <a href = "/current_affairs" target='_blank'><button class = "popup-buttons"><img src = "assets/currentaffairs.png" height = '40' width = '40'><h3 class ="popup-items" id="CurrentAffairs">Current Affairs</h3></button></a>
+        <a href = "/translate" target='_blank'><button class = "popup-buttons"><img src = "assets/translator.jpeg" height = '40' width = '40'><h3 class ="popup-items" id="CurrentAffairs">Translator</h3></button></a>
+        <button class = "popup-buttons"><img src = "assets/screenshare.jpeg" height = '40' width = '40'><h3 class ="popup-items" id = "share">Share Screen</h3></button>
+        <button class = "popup-buttons"><img src = "assets/recording-icon.jpg" height = '40' width = '40'><h3 class ="popup-items" id = "record">Record Meeting</h3></button>
+        <a href='/home/whiteboard' target='_blank'><button class = "popup-buttons"><img src = "assets/whiteboard-icon.jpg" height = '40' width = '40'><h3 class ="popup-items" id = "whiteboard">Use Whiteboard</h3></button></a>
+      </span>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="glass.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll("#code"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+            });
+        </script>
+</body>
+</html>
