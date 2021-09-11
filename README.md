@@ -39,7 +39,11 @@ A Video chat app built using NodeJs, WebRTC and Firebase. The user experience is
 
 # Contributors
 Ahel Das Chatterjee
+
 Anirban Sikder
+
 Anish De
+
 Sounak Majumder
+
 Devtanu Misra
