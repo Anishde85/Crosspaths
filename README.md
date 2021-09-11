@@ -5,11 +5,12 @@ A Video chat app built using NodeJs, WebRTC and Firebase. The user experience is
 - Control video and audio settings
 - Record the meeting
 - Alert other users when meeting is being recorded
-- Mute other participants
-- Enlarge others' videos
+- Games like Tic-tac-toe are present to counter boredom
+- Translator integrated to break the barrier of language
+- Current affairs page to keep students updated about the outside world
 - Whiteboard integrated with the site
 - Share screen with other participants
-- Invite others directly from site by providing their mail ids
+- Invite others directly from site by meeting ids
 
 # Snapshots of the site:
 ## Join/Create a meeting:
