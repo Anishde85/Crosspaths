@@ -38,8 +38,6 @@ A Video chat app built using NodeJs, WebRTC and Firebase. The user experience is
 <img src="./screenshots/glassmorphism.gif">
 
 # Contributors
-Ahel Das Chatterjee
-
 Anirban Sikder
 
 Anish De
@@ -47,3 +45,5 @@ Anish De
 Sounak Majumder
 
 Devtanu Misra
+
+Ahel Das Chatterjee
