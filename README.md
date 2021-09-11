@@ -1,5 +1,5 @@
 # Crosspaths
-A simple clone of Microsoft Teams built using NodeJs, WebRTC and Firebase. The user experience is as simple as possible. Users do not have to sign up. They can simply create or join meeting with their name and preferred audio/video settings. Some of the features include:
+A Video chat app built using NodeJs, WebRTC and Firebase. The user experience is as simple as possible. Users do not have to sign up. They can simply create or join meeting with their name and preferred audio/video settings. Some of the features include:
 - Video calling with 2 or more users
 - Chat during an ongoing meeting 
 - Control video and audio settings
